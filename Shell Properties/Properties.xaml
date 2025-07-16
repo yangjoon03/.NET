@@ -1,0 +1,68 @@
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="YourApp.AppShell"
+
+    <!-- NavBarIsVisible: 네비게이션 바(상단 바)를 보이거나 숨김 -->
+    Shell.NavBarIsVisible="True"
+
+    <!-- FlyoutBehavior: 플라이아웃 메뉴 동작 설정
+         Disabled - 플라이아웃 메뉴 비활성화
+         Flyout - 슬라이드 메뉴 활성화
+         Locked - 플라이아웃 메뉴 항상 열림 -->
+    Shell.FlyoutBehavior="Flyout"
+
+    <!-- FlyoutIsPresented: 플라이아웃 메뉴가 현재 열려 있는지 여부 -->
+    Shell.FlyoutIsPresented="False"
+
+    <!-- TabBarIsVisible: 탭 바를 보이거나 숨김 -->
+    Shell.TabBarIsVisible="True"
+
+    <!-- BackgroundColor: 네비게이션 바 배경색 지정 -->
+    Shell.BackgroundColor="LightGray"
+
+    <!-- TitleColor: 네비게이션 바 타이틀 텍스트 색상 -->
+    Shell.TitleColor="Black"
+
+    <!-- ForegroundColor: 네비게이션 바 아이콘 및 텍스트 색상 -->
+    Shell.ForegroundColor="DarkBlue"
+
+    <!-- DisabledColor: 비활성화된 메뉴 아이템 색상 -->
+    Shell.DisabledColor="Gray"
+
+    <!-- UnselectedColor: 선택되지 않은 탭 아이템 색상 -->
+    Shell.UnselectedColor="DarkGray"
+
+    <!-- TabBarBackgroundColor: 탭 바 배경색 -->
+    Shell.TabBarBackgroundColor="White"
+
+    <!-- TabBarForegroundColor: 탭 바 글자 및 아이콘 색상 -->
+    Shell.TabBarForegroundColor="Black"
+
+    <!-- TabBarTitleColor: 탭 바 타이틀 텍스트 색상 -->
+    Shell.TabBarTitleColor="Black"
+
+    <!-- TabBarUnselectedColor: 탭 바 선택 안 된 아이템 색상 -->
+    Shell.TabBarUnselectedColor="Gray">
+
+    <!-- 뒤로가기 버튼 동작 커스터마이징 -->
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior
+            IsVisible="True"
+            Command="{Binding BackCommand}" />
+    </Shell.BackButtonBehavior>
+
+    <!-- Flyout 메뉴 및 탭 구성 -->
+    <FlyoutItem Title="Home" Icon="home_icon.png">
+        <Tab Title="MainTab">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Settings" Icon="settings_icon.png">
+        <Tab Title="SettingsTab">
+            <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
