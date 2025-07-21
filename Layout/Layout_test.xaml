@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_study.StorePage"
+             Title="StorePage">
+
+    
+    <StackLayout>
+        <FlexLayout Padding="0" Margin="0">
+
+            <Label Text="빨강 라벨"
+               BackgroundColor="Red" 
+               TextColor="White"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>
+            <Label Text="파랑 라벨" 
+               BackgroundColor="Blue" 
+               TextColor="White"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>
+
+        </FlexLayout>
+
+
+
+        <AbsoluteLayout HeightRequest="500">
+            <Label Text="기본"
+            BackgroundColor="Red"
+            TextColor="White"
+            AbsoluteLayout.LayoutBounds="10,10, 100, 100"
+            AbsoluteLayout.LayoutFlags="None"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+
+           <Label Text="위치 지정(우측 상단)"
+           BackgroundColor="Green"
+           TextColor="White"
+           AbsoluteLayout.LayoutBounds="1,0,200,200"
+           TranslationX="-10"
+           TranslationY="10"
+           AbsoluteLayout.LayoutFlags="PositionProportional"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center" />
+
+            <Label Text="위치 지정(좌측 하단)"
+            BackgroundColor="Blue"
+            TextColor="White"
+            AbsoluteLayout.LayoutBounds="0,1,200,200"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            HorizontalTextAlignment="Center"
+            TranslationX="10"
+            TranslationY="-10"
+            VerticalTextAlignment="Center" />
+
+            <Label Text="위치 지정(우측 하단)"
+            BackgroundColor="Purple"
+            TextColor="White"
+            AbsoluteLayout.LayoutBounds="1,1,200,200"
+            TranslationX="-10"
+            TranslationY="-10"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+
+
+        </AbsoluteLayout> 
+        <HorizontalStackLayout>
+            <Label 
+            BackgroundColor="Red"
+            Text="수평" 
+            VerticalOptions="Center"
+            FontSize="20"/>
+            <Label 
+            BackgroundColor="Blue"
+            Text="테스트" 
+            Margin="10"
+            VerticalOptions="Center"
+            FontSize="20"/>
+
+
+        </HorizontalStackLayout>
+
+    </StackLayout>
+    
+</ContentPage>
