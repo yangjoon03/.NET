@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_study.MainPage">
+
+    <VerticalStackLayout Spacing="15" Padding="10">
+        <!--텍스트-->
+        <Label Text="Empty"
+               FontSize="20"></Label>
+        
+        <!--버튼-->
+        <Button x:Name="Button1"
+                Text ="1번 버튼"></Button>
+        
+        <!--이미지의 높이를 185 디바이스 돌릭 픽셀로 설정-->
+        <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+        <!--체크박스-->
+        <CheckBox x:Name="myCheckBox"
+                  IsChecked="True"
+                  Color="Red"/>
+        
+        <!--라디오 버튼-->
+        <RadioButton GroupName="fruits" Content="사과" Value="Apple" />
+        <RadioButton GroupName="fruits" Content="바나나" Value="Banana" />
+        <RadioButton GroupName="fruits" Content="오렌지" Value="Orange" />
+
+        <!--토글 스위치-->
+        <Switch x:Name="toggleSwitch"
+                IsToggled="False"
+                Toggled="OnToggled"
+                OnColor="Green" />
+
+
+    </VerticalStackLayout>
+
+</ContentPage>
