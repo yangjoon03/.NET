@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_study.Layout"
+             Title="Layout">
+    
+    <Grid RowDefinitions="3*,2*" ColumnDefinitions="*,*,*">
+        <BoxView Color="Red" Grid.Row="0" Grid.Column="0"/>
+        <BoxView Color="Green" Grid.Row="0" Grid.Column="1"/>
+        <BoxView Color="Blue" Grid.Row="1" Grid.Column="0"/>
+        <BoxView Color="Yellow" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+
+</ContentPage>
