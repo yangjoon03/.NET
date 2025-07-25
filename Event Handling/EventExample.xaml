@@ -1,18 +1,32 @@
-namespace Maui_study;
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_study.EventExample"
+             Title="EventExample">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center">
 
-public partial class EventExample : ContentPage
-{
-    int count = 0;
-    public EventExample()
-	{
-		InitializeComponent();
-	}
-    private void OnButtonClickedLabel(object sender, EventArgs e)
-    {
-        resultLabel.Text = (count++)+ "번 클릭되었습니다!";//텍스트 변경
-    }
-    private void OnButtonClickedDisplayAlert(object sender, EventArgs e)
-    {
-        DisplayAlert("알림", "버튼이 클릭되었습니다!", "확인");//창알림
-    }
-}
+        <Label 
+            x:Name="resultLabel"
+            Text="아래 버튼을 눌러보세요"
+            FontSize="20"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="클릭하세요"
+            Clicked="OnButtonClickedLabel"
+            HorizontalOptions="Center" />
+
+        <Label 
+        Text="아래 버튼을 눌러보세요"
+        FontSize="20"
+        HorizontalOptions="Center" />
+
+        <Button 
+        Text="클릭하세요"
+        Clicked="OnButtonClickedDisplayAlert"
+        HorizontalOptions="Center" />
+        </VerticalStackLayout>
+</ContentPage>
