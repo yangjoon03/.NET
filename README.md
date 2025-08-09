@@ -17,5 +17,14 @@ Tutorial : [NET Multi-Platform App UI](https://learn.microsoft.com/ko-kr/trainin
 | **성능**        | 괜찮지만 플랫폼별 성능 차이 있음 | 빠르고 일관된 성능                 |
 | **커스텀 UI**    | 복잡한 UI는 구현 난이도 있음  | 복잡하고 멋진 UI도 상대적으로 쉽게 구현 가능 |
 
-## 바인딩
+## Chapter3 요약
+### 바인딩
 데이터 변경 시 UI가 자동으로 업데이트되고, UI 변경 시 데이터도 자동으로 반영되도록 실시간 동기화
+
+## Chapter4 요약
+### HR
+2주, 3일, 4시간 = 13.5일
+5day = 1week
+1day = 8hour
+
+
