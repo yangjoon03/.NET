@@ -28,3 +28,14 @@ Tutorial : [NET Multi-Platform App UI](https://learn.microsoft.com/ko-kr/trainin
 1day = 8hour
 
 
+Model (비즈니스 로직):
+데이터는 "13.5일"이라는 숫자로만 제공됩니다.
+이건 계산, 저장, 전송하기엔 편리한 형태예요.
+
+View (사용자 화면):
+사용자는 **"13.5일"**을 보고 싶지 않아요.
+**"2주, 3일, 4시간"**처럼 사람이 이해하기 쉬운 형식으로 보고 싶어요.
+
+ViewModel의 역할:
+ViewModel은 모델의 13.5일을 받아서, 보기 좋은 형식(예: "2주, 3일, 4시간")으로 바꿔줍니다.
+
